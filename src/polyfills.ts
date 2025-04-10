@@ -1,6 +1,12 @@
 
 // Polyfill for process.env for Next.js components in Vite
-import type { Process } from 'process';
+
+// Define our own Process interface instead of importing it
+interface Process {
+  env: {
+    [key: string]: string | undefined;
+  }
+}
 
 declare global {
   interface Window {
@@ -14,5 +20,5 @@ if (typeof window !== 'undefined' && !window.process) {
       NODE_ENV: 'development',
       NEXT_PUBLIC_BASE_PATH: ''
     }
-  } as unknown as Process;
+  } as Process;
 }
