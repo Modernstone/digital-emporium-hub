@@ -20,5 +20,5 @@ if (typeof window !== 'undefined' && !window.process) {
       NODE_ENV: 'development',
       NEXT_PUBLIC_BASE_PATH: ''
     }
-  } as Process;
+  };
 }
