@@ -9,6 +9,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
 import Cart from "./pages/Cart";
+import Phones from "./pages/Phones";
+import Laptops from "./pages/Laptops";
+import Accessories from "./pages/Accessories";
 import { CartProvider } from "./contexts/CartContext";
 
 // Create a client
@@ -27,6 +30,9 @@ const App = () => {
                 <Route path="/" element={<Index />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/phones" element={<Phones />} />
+                <Route path="/laptops" element={<Laptops />} />
+                <Route path="/accessories" element={<Accessories />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

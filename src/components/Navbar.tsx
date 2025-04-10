@@ -34,13 +34,13 @@ const Navbar = () => {
             <Link to="/" className="text-gray-700 hover:text-tech-blue transition-colors">
               Home
             </Link>
-            <Link to="/#phones" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/phones" className="text-gray-700 hover:text-tech-blue transition-colors">
               Phones
             </Link>
-            <Link to="/#laptops" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/laptops" className="text-gray-700 hover:text-tech-blue transition-colors">
               Laptops
             </Link>
-            <Link to="/#accessories" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/accessories" className="text-gray-700 hover:text-tech-blue transition-colors">
               Accessories
             </Link>
           </div>
@@ -102,13 +102,13 @@ const Navbar = () => {
             <Link to="/" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Home
             </Link>
-            <Link to="/#phones" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/phones" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Phones
             </Link>
-            <Link to="/#laptops" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/laptops" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Laptops
             </Link>
-            <Link to="/#accessories" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/accessories" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Accessories
             </Link>
             <Link to="/auth" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
