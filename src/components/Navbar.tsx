@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,23 +26,23 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-tech-navy">
+            <Link to="/" className="text-2xl font-bold text-tech-navy">
               TechHub
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className={cn("hidden md:flex items-center space-x-8")}>
-            <Link href="/" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/" className="text-gray-700 hover:text-tech-blue transition-colors">
               Home
             </Link>
-            <Link href="/phones" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/phones" className="text-gray-700 hover:text-tech-blue transition-colors">
               Phones
             </Link>
-            <Link href="/laptops" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/laptops" className="text-gray-700 hover:text-tech-blue transition-colors">
               Laptops
             </Link>
-            <Link href="/accessories" className="text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/accessories" className="text-gray-700 hover:text-tech-blue transition-colors">
               Accessories
             </Link>
           </div>
@@ -62,12 +62,12 @@ const Navbar = () => {
           {/* Icons */}
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="icon" className="hidden md:flex">
-              <Link href="/auth">
+              <Link to="/auth">
                 <User className="h-5 w-5" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" className="relative">
-              <Link href="/cart">
+              <Link to="/cart">
                 <ShoppingCart className="h-5 w-5" />
                 {cartCount > 0 && (
                   <Badge 
@@ -101,22 +101,22 @@ const Navbar = () => {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && isMobile && (
           <div className="mt-2 pb-4 space-y-2 animate-fade-in">
-            <Link href="/" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Home
             </Link>
-            <Link href="/phones" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/phones" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Phones
             </Link>
-            <Link href="/laptops" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/laptops" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Laptops
             </Link>
-            <Link href="/accessories" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/accessories" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Accessories
             </Link>
-            <Link href="/auth" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/auth" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Sign In / Register
             </Link>
-            <Link href="/cart" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
+            <Link to="/cart" className="block py-2 text-gray-700 hover:text-tech-blue transition-colors">
               Cart {cartCount > 0 && <span className="ml-2 bg-tech-orange text-white px-2 py-0.5 rounded-full text-xs">{cartCount}</span>}
             </Link>
           </div>
