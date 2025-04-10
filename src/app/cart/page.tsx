@@ -2,7 +2,7 @@
 'use client';
 
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -17,7 +17,7 @@ const Cart = () => {
           <div className="text-center py-16">
             <h2 className="text-2xl font-medium text-gray-600 mb-4">Your cart is empty</h2>
             <p className="text-gray-500 mb-8">Looks like you haven't added any products to your cart yet.</p>
-            <Link to="/">
+            <Link href="/">
               <button className="bg-tech-blue hover:bg-tech-blue/90 text-white px-4 py-2 rounded">Continue Shopping</button>
             </Link>
           </div>

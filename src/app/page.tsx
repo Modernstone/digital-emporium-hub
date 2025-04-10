@@ -1,13 +1,13 @@
 
 'use client';
 
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/ProductCard";
 import { getFeaturedProducts } from "@/data/products";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   const featuredProducts = getFeaturedProducts();
@@ -57,7 +57,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Discover the latest smartphones with cutting-edge features
               </p>
-              <Link to="/phones">
+              <Link href="/phones">
                 <Button className="bg-tech-blue hover:bg-tech-blue/90">
                   View All Phones
                 </Button>
@@ -75,7 +75,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Powerful computers for work, gaming, and everything in between
               </p>
-              <Link to="/laptops">
+              <Link href="/laptops">
                 <Button className="bg-tech-blue hover:bg-tech-blue/90">
                   View All Laptops
                 </Button>
@@ -93,7 +93,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Enhance your tech experience with our range of accessories
               </p>
-              <Link to="/accessories">
+              <Link href="/accessories">
                 <Button className="bg-tech-blue hover:bg-tech-blue/90">
                   View All Accessories
                 </Button>
@@ -119,7 +119,7 @@ export default function Home() {
                 The new PowerBook Ultra is designed for professionals who demand the best. 
                 Lightning-fast processing, stunning display, and all-day battery life.
               </p>
-              <Link to="/laptops">
+              <Link href="/laptops">
                 <Button className="bg-tech-blue hover:bg-tech-blue/90">
                   Explore PowerBooks
                 </Button>
